@@ -18,8 +18,8 @@ let logerrors=[];
 
 var con=mysql.createConnection({
     host:'localhost',
-    user:'harsha',
-    password:'Vshs@1234',
+    user:'yourusername',
+    password:'yourpassword',
     database:'feedb'
 });
 con.connect(function(err){
