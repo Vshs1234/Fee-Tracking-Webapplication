@@ -1,0 +1,44 @@
+<%- include('header') -%>
+    <div class="container-fluid text-center text-info register">
+        <div class="register-box">
+            <form action="/register" method="POST">
+                <h3 id="heading">Register</h3>
+                <p class="invisible">Required felids are not filled properly.</p>
+                <h5 class="error">* required</h5>
+                
+                    <% for (var i=0;i<errors.length;i++){ %>
+                          <p style="color:red;">*<%= errors[i] %></p>
+                          
+                    <% } %>
+                    <% errors.splice(0,errors.length); %>
+                    
+                <table class="register-table">
+                    <tr>
+                        <td><label for="">*Student Name:</label></td><p class="erormsgsname"></p>
+                        <td><input type="text" name="sname"><br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">*Student ID:</label></td><p class="erormsgsid"></p>
+                        <td><input type="text" name="sid"><br></td>
+        
+                    </tr>
+                    <tr>
+                        <td><label for="">*Username</label></td><p class="erormsguname"></p>
+                        <td><input type="text" name="uname"><br></td>
+        
+                    </tr>
+                    <tr>
+                        <td><label for="">*Password</label></td><p class="erormsgpass"></p>
+                        <td><input type="password" name="pass"><br></td>
+        
+                    </tr>
+                    
+                </table>
+
+
+                <button type="submit" class="btn btn-primary" style="padding:10px; margin:10px;">Register</button>
+            </form>
+
+        </div>
+    </div>
+    <%- include('footer') -%> 

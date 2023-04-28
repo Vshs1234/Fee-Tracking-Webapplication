@@ -1,0 +1,68 @@
+#body{
+    background-color: black;
+    
+    
+}
+/* css for welocome page  */
+.welcome{
+    padding:110px;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+.welcome-box{
+    padding:30px;
+    margin:65px;
+    background-color: black;
+}
+#heading{
+    padding:20px;
+}
+#clgname{
+    padding:40px;
+    font-size: 60px;
+}
+.lore{
+    font-size: 35px;
+    padding:10px;
+}
+/* login page  */
+.login{
+    padding:100px;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+.login-box{
+    padding:60px 20px;
+    margin:80px 525px;
+    background-color: black;
+
+}
+
+label{
+    padding:15px;
+}
+.login-table{
+    padding: 10px;
+    margin-left:55px;
+}
+/* register page  */
+.register{
+    padding:30px;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+}
+.register-box{
+    padding:60px 20px;
+    margin:80px 105px;
+    background-color: black;
+}
+.register-table{
+    padding: 10px;
+    margin-left:455px;
+}

@@ -1,0 +1,26 @@
+<%- include('header') -%>
+<body>
+    <div class="container-fluid text-center text-info login">
+        <div class="login-box">
+            <form action="/login" method="POST">
+                <h3 style="padding-bottom:10px;">Login</h3>
+                    <table class="login-table">
+                        <tr>
+                            <td><label for="">Student ID:</label></td>
+                            <td><input type="text" name="lsid"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Username:</label></td>
+                            <td><input type="text" name="luname"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Password</label></td>
+                            <td><input type="password" name="lpass"></td>
+                        </tr>
+                    </table>
+                    <button type="submit" class="btn btn-primary" style="padding:10px; margin:10px;">Login</button>
+            </form>
+
+        </div>
+    </div>
+<%- include('footer') -%>
